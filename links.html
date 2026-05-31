@@ -165,7 +165,9 @@
             }
 
             @keyframes blink {
-                50% { opacity: 0; }
+                50% {
+                    opacity: 0;
+                }
             }
 
             .hero-desc {
@@ -271,11 +273,21 @@
                 transform: translateY(0);
             }
 
-            .stagger-1 { transition-delay: 0.05s; }
-            .stagger-2 { transition-delay: 0.12s; }
-            .stagger-3 { transition-delay: 0.19s; }
-            .stagger-4 { transition-delay: 0.26s; }
-            .stagger-5 { transition-delay: 0.33s; }
+            .stagger-1 {
+                transition-delay: 0.05s;
+            }
+            .stagger-2 {
+                transition-delay: 0.12s;
+            }
+            .stagger-3 {
+                transition-delay: 0.19s;
+            }
+            .stagger-4 {
+                transition-delay: 0.26s;
+            }
+            .stagger-5 {
+                transition-delay: 0.33s;
+            }
 
             @media (prefers-reduced-motion: reduce) {
                 .reveal {
@@ -318,37 +330,82 @@
                 <div class="hero-inner">
                     <h1 class="hero-name">Jose Luna</h1>
                     <p class="hero-sub">
-                        Student. Builder. Homelab enjoyer.<span class="cursor">&nbsp;</span>
+                        Student. Builder. Homelab enjoyer.<span class="cursor"
+                            >&nbsp;</span
+                        >
                     </p>
-                    <p class="hero-desc">
-                        Santiago, Chile · quick links
-                    </p>
+                    <p class="hero-desc">Santiago, Chile · quick links</p>
 
                     <div class="links-grid">
                         <div class="divider-label">Social</div>
 
-                        <a href="https://github.com/chachoCL" target="_blank" rel="noopener noreferrer" class="link-card">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        <a
+                            href="https://github.com/chachoCL"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-card"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                />
                             </svg>
                             <span class="link-label">GitHub</span>
                             <span class="link-meta">@chachoCL</span>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/jose-luna-b56239143/" target="_blank" rel="noopener noreferrer" class="link-card">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                <rect width="4" height="12" x="2" y="9"/>
-                                <circle cx="4" cy="4" r="2"/>
+                        <a
+                            href="https://www.linkedin.com/in/jose-luna-b56239143/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-card"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
                             </svg>
                             <span class="link-label">LinkedIn</span>
-                            <span class="link-meta">/in/jose-luna-b56239143</span>
+                            <span class="link-meta"
+                                >/in/jose-luna-b56239143</span
+                            >
                         </a>
 
                         <a href="mailto:jose@joseluna.dev" class="link-card">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="20" height="16" x="2" y="4" rx="2"/>
-                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    width="20"
+                                    height="16"
+                                    x="2"
+                                    y="4"
+                                    rx="2"
+                                />
+                                <path
+                                    d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                />
                             </svg>
                             <span class="link-label">Email</span>
                             <span class="link-meta">jose@joseluna.dev</span>
@@ -356,24 +413,75 @@
 
                         <div class="divider-label">Projects</div>
 
-                        <a href="https://github.com/chachoCL/monfit" target="_blank" rel="noopener noreferrer" class="link-card">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"/>
-                                <polygon points="18 2 22 6 12 16 8 16 8 12 18 2"/>
-                                <line x1="12" y1="8" x2="18" y2="2"/>
+                        <a
+                            href="https://github.com/chachoCL/monfit"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-card"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34"
+                                />
+                                <polygon
+                                    points="18 2 22 6 12 16 8 16 8 12 18 2"
+                                />
+                                <line x1="12" y1="8" x2="18" y2="2" />
                             </svg>
                             <span class="link-label">MonFit</span>
-                            <span class="link-meta">self-hostable nutrition tracker</span>
+                            <span class="link-meta"
+                                >self-hostable nutrition tracker</span
+                            >
                         </a>
 
-                        <a href="https://github.com/chachoCL/lanking" target="_blank" rel="noopener noreferrer" class="link-card">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                                <rect width="18" height="18" x="3" y="3" rx="2"/>
-                                <path d="M3 9h18"/>
-                                <path d="M9 21V9"/>
-                                <circle cx="12" cy="12" r="1" fill="currentColor"/>
-                                <circle cx="16" cy="12" r="1" fill="currentColor"/>
-                                <circle cx="8" cy="12" r="1" fill="currentColor"/>
+                        <a
+                            href="https://github.com/chachoCL/lanking"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="link-card"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <rect
+                                    width="18"
+                                    height="18"
+                                    x="3"
+                                    y="3"
+                                    rx="2"
+                                />
+                                <path d="M3 9h18" />
+                                <path d="M9 21V9" />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="1"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="16"
+                                    cy="12"
+                                    r="1"
+                                    fill="currentColor"
+                                />
+                                <circle
+                                    cx="8"
+                                    cy="12"
+                                    r="1"
+                                    fill="currentColor"
+                                />
                             </svg>
                             <span class="link-label">Lanking</span>
                             <span class="link-meta">finance aggregator</span>
@@ -381,9 +489,16 @@
                     </div>
 
                     <a href="/" class="back-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="19" y1="12" x2="5" y2="12"/>
-                            <polyline points="12 19 5 12 12 5"/>
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <line x1="19" y1="12" x2="5" y2="12" />
+                            <polyline points="12 19 5 12 12 5" />
                         </svg>
                         back home
                     </a>
@@ -391,7 +506,7 @@
             </section>
         </main>
 
-        <p class="footer-note">Jose Luna &mdash; 2025</p>
+        <p class="footer-note">Jose Luna</p>
 
         <script>
             const observer = new IntersectionObserver(
